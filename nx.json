@@ -5,7 +5,10 @@
     "production": [
       "default",
       "!{projectRoot}/.eslintrc.json",
-      "!{projectRoot}/eslint.config.js"
+      "!{projectRoot}/eslint.config.js",
+      "!{projectRoot}/**/*.stories.@(js|jsx|ts|tsx|mdx)",
+      "!{projectRoot}/.storybook/**/*",
+      "!{projectRoot}/tsconfig.storybook.json"
     ],
     "sharedGlobals": []
   },
@@ -34,6 +37,9 @@
           "env": "NX_MF_DEV_REMOTES"
         }
       ]
+    },
+    "build-storybook": {
+      "cache": true
     }
   },
   "generators": {

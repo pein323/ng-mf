@@ -21,6 +21,9 @@
     "@nx/webpack": "20.2.1",
     "@nx/workspace": "20.2.1",
     "@schematics/angular": "~19.0.0",
+    "@storybook/addon-essentials": "^8.4.6",
+    "@storybook/angular": "^8.4.6",
+    "@storybook/core-server": "^8.4.6",
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
@@ -31,6 +34,7 @@
     "nx": "20.2.1",
     "prettier": "^2.6.2",
     "storybook": "^8.4.6",
+    "ts-node": "10.9.1",
     "tslib": "^2.3.0",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.13.0"
