@@ -3,13 +3,15 @@ import {Component, inject, OnInit} from '@angular/core';
 import {Router, RouterModule} from '@angular/router';
 import {UserService} from '@ng-mf/data-access-user';
 import {distinctUntilChanged} from 'rxjs/operators';
+import {HaUiLibComponent} from "@ng-mf/ha-ui-lib";
 
 @Component({
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, HaUiLibComponent],
   selector: 'ng-mf-root',
   template: `
     <div class="dashboard-nav">Admin Dashboard</div>
+    <lib-ha-ui-lib></lib-ha-ui-lib>
     <div *ngIf="isLoggedIn$ | async; else signIn">
       You are authenticated so you can see this content.
     </div>

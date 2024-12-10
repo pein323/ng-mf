@@ -2,10 +2,11 @@ import {Component, inject} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {UserService} from '@ng-mf/data-access-user';
+import {HaUiLibComponent} from "@ng-mf/ha-ui-lib";
 
 @Component({
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, HaUiLibComponent],
   selector: 'ng-mf-login-entry',
   template: `
     <div class="login-app">
@@ -18,6 +19,7 @@ import {UserService} from '@ng-mf/data-access-user';
           Password:
           <input type="password" name="password" [(ngModel)]="password"/>
         </label>
+        <lib-ha-ui-lib></lib-ha-ui-lib>
         <button type="submit">Login</button>
       </form>
       <div *ngIf="isLoggedIn$ | async">User is logged in!</div>
