@@ -58,8 +58,8 @@
     "serve": {
       "executor": "@nx/angular:module-federation-dev-server",
       "options": {
-        "port": 4200,
-        "publicHost": "http://localhost:4200"
+        "port": 5200,
+        "publicHost": "http://localhost:5200"
       },
       "configurations": {
         "production": {
@@ -84,7 +84,7 @@
       "executor": "@nx/web:file-server",
       "options": {
         "buildTarget": "employee:build",
-        "port": 4200,
+        "port": 5200,
         "spa": true
       }
     }
