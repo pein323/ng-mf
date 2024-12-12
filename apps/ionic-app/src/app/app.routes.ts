@@ -1,9 +1,9 @@
-import { NxWelcomeComponent } from './nx-welcome.component';
-import { Route } from '@angular/router';
+import {Routes} from '@angular/router';
+import {TabsPage} from "./tabs/tabs.page";
 
-export const appRoutes: Route[] = [
+export const routes: Routes = [
   {
     path: '',
-    component: NxWelcomeComponent,
-  },
+    component: TabsPage
+  }
 ];

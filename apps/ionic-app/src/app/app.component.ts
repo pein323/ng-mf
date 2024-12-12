@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
 
 @Component({
-  imports: [NxWelcomeComponent, RouterModule],
-  selector: 'ng-mf-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  selector: 'app-root',
+  templateUrl: 'app.component.html',
+  standalone: true,
+  imports: [IonApp, IonRouterOutlet],
 })
-export class AppComponent {
-  title = 'ionic-app';
-}
+export class AppComponent {}
